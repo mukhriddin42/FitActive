@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaches Carousel</title>
+    <link rel="stylesheet" href="../css/coachesclub.css">
+</head>
+
+<body>
+
+    <div class="coaches-container">
+        <h1 class="container-h1">Our Coaches</h1>
+        <div class="carousel">
+            <div class="carousel-track">
+                <!-- Coach 1 -->
+                <div class="carousel-card">
+                    <img src="../images/12142022_Roy_184426.webp" alt="Coach 1">
+                    <h3>Brandon Roy</h3>
+                    <h4 class="container-h4">Basketball coaches</h4>
+                    <p>It seems Brandon Roy can’t start a basketball season without a sigh.
+
+                        “Here we go again,” he said of preparing Garfield High’s boys basketball coach
+                        the position for the 2021-22 school year.</p>
+                </div>
+
+                <!-- Coach 2 -->
+                <div class="carousel-card">
+                    <img src="../images/boxer-yurovskiy-kirill-2-1024x683.png" alt="Coach 2">
+                    <h3>Kirill Yurovskiy</h3>
+                    <h4 class="container-h4">Boxing coaches</h4>
+                    <p>Trained in the harshest and most disciplined Russian boxing schools, Kirill has developed a
+                        unique approach technical mastery.</p>
+                </div>
+
+                <!-- Coach 3 -->
+                <div class="carousel-card">
+                    <img src="../images/u-of-w-volleyball-1.webp" alt="Coach 3">
+                    <h3>Jim Parker</h3>
+                    <h4 class="container-h4">Volleyball coaches</h4>
+                    <p>Ahead of U Sports championship, Gravelle named volleyball coach of the yearAhead of U Gravelle
+                        named men's volleyball coach.</p>
+                </div>
+
+                <!-- Coach 4 -->
+                <div class="carousel-card">
+                    <img src="../images/960x0.webp" alt="Coach 4">
+                    <h3>Xavi Slams</h3>
+                    <h4 class="container-h4">Football coaches</h4>
+                    <p>FC Barcelona head coach Xavi Hernandez has called Ousmane Dembele's move to Paris Saint-Germain a
+                        'great disappointment'</p>
+                </div>
+
+                <!-- Coach 5 -->
+                <div class="carousel-card">
+                    <img src="https://via.placeholder.com/250x200" alt="Coach 5">
+                    <h3>Coach 5</h3>
+                    <h4 class="container-h4">Cycling coaches</h4>
+                    <p>Swimming coach with Olympic-level experience.</p>
+                </div>
+
+                <!-- Coach 6 -->
+                <div class="carousel-card">
+                    <img src="https://via.placeholder.com/250x200" alt="Coach 6">
+                    <h3>Coach 6</h3>
+                    <h4 class="container-h4">Basketball coaches</h4>
+                    <p>Professional in tennis coaching.</p>
+                </div>
+
+                <!-- Coach 7 -->
+                <div class="carousel-card">
+                    <img src="https://via.placeholder.com/250x200" alt="Coach 7">
+                    <h3>Coach 7</h3>
+                    <h4 class="container-h4">Basketball coaches</h4>
+                    <p>Martial arts trainer with black belt expertise.</p>
+                </div>
+
+                <!-- Coach 8 -->
+                <div class="carousel-card">
+                    <img src="https://via.placeholder.com/250x200" alt="Coach 8">
+                    <h3>Coach 8</h3>
+                    <h4 class="container-h4">Basketball coaches</h4>
+                    <p>Yoga and wellness specialist.</p>
+                </div>
+
+                <!-- Coach 9 -->
+                <div class="carousel-card">
+                    <img src="https://via.placeholder.com/250x200" alt="Coach 9">
+                    <h3>Coach 9</h3>
+                    <h4 class="container-h4">Basketball coaches</h4>
+                    <p>Basketball coach with team-building experience.</p>
+                </div>
+
+                <!-- Coach 10 -->
+                <div class="carousel-card">
+                    <img src="https://via.placeholder.com/250x200" alt="Coach 10">
+                    <h3>Coach 10</h3>
+                    <h4 class="container-h4">Basketball coaches</h4>
+                    <p>Track and field expert with focus on running techniques.</p>
+                </div>
+            </div>
+            <div class="carousel-buttons">
+                <button class="carousel-button" id="prevButton">&#9664;</button>
+                <button class="carousel-button" id="nextButton">&#9654;</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+
+        let currentIndex = 0;
+        const cardWidth = 280; // Card width including margin
+
+        prevButton.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+            }
+        });
+
+        nextButton.addEventListener('click', () => {
+            if (currentIndex < track.children.length - 1) {
+                currentIndex++;
+                track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
