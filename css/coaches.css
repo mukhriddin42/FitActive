@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+:root{
+    --DarkBlue:#09ff00;
+    --SimpleBlack:#3B4A6B;
+    --Blue:#1391CE;
+    --SkyBlue:#cdedffa9;
+    --White:#FFFFFF;
+    --DarkYellow:#F7BA0E;
+}
+.fitness-teacher{
+    font-family: "Rubik", sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+color: var(--Blue);
+text-align: center;
+margin-top: 20px;
+}
+.fitness-teacher:hover{
+    color: blue;
+    cursor: pointer;
+    text-shadow: 5px 5px 2px #1391CE;
+}
+.chiziq{
+    margin:20px auto;
+    width: 1200px;
+    height: 2px;
+ background-color:var(--DarkBlue);
+}
+.coaches-img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.coaches-img:hover{
+  box-shadow: 3px 3px 5px gray;
+
+    cursor: pointer;
+}
+.coaches-name{
+    font-family: "Rubik", sans-serif;
+    color: var(--Blue);
+    margin-top: 20px;
+}
+.coaches-name:hover{
+    color: blue;
+    cursor: pointer;
+}
+.coaches-p{
+    font-family: "Rubik", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    width: 290px;
+    margin-top: 10px;
+color: var(--SimpleBlack);
+}
+.coaches-div{
+    display: flex;
+    gap: 60px;
+    position: relative;
+    top: 20px;
+left: 74px;
+flex-wrap: wrap;
+}
+
+/* From Uiverse.io by Madflows */ 
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background:lightcoral;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    left: 400px;
+
+  }
+  
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+  }
+  

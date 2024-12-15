@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaches Carousel</title>
+    <link rel="stylesheet" href="../css/coachesclub.css">
+</head>
+
+<body>
+
+    <div class="coaches-container">
+        <h1 class="container-h1">Our Coaches</h1>
+        <div class="carousel">
+            <div class="carousel-track">
+                <!-- Coach 1 -->
+                <div class="carousel-card">
+                    <img src="../images/12142022_Roy_184426.webp" alt="Coach 1">
+                    <h3>Brandon Roy</h3>
+                    <h4 class="container-h4">Basketball coaches</h4>
+                    <p>It seems Brandon Roy can’t start a basketball season without a sigh.
+
+                        “Here we go again,” he said of preparing Garfield High’s boys basketball.</p>
+                </div>
+
+                <!-- Coach 2 -->
+                <div class="carousel-card">
+                    <img src="../images/boxer-yurovskiy-kirill-2-1024x683.png" alt="Coach 2">
+                    <h3>Kirill Yurovskiy</h3>
+                    <h4 class="container-h4">Boxing coaches</h4>
+                    <p>Trained in the harshest and most disciplined Russian boxing schools, Kirill has developed a
+                        unique approach technical mastery.</p>
+                </div>
+
+                <!-- Coach 3 -->
+                <div class="carousel-card">
+                    <img src="../images/u-of-w-volleyball-1.webp" alt="Coach 3">
+                    <h3>Jim Parker</h3>
+                    <h4 class="container-h4">Volleyball coaches</h4>
+                    <p>Ahead of U Sports championship, Gravelle named volleyball coach of the yearAhead of U Gravelle
+                        named men's volleyball coach.</p>
+                </div>
+
+                <!-- Coach 4 -->
+                <div class="carousel-card">
+                    <img src="../images/960x0.webp" alt="Coach 4">
+                    <h3>Xavi Slams</h3>
+                    <h4 class="container-h4">Football coaches</h4>
+                    <p>FC Barcelona head coach Xavi Hernandez has called Ousmane Dembele's move to Paris Saint-Germain a
+                        'great disappointment'</p>
+                </div>
+
+                <!-- Coach 5 -->
+                <div class="carousel-card">
+                    <img src="../images/l-1.jpg" alt="Coach 5">
+                    <h3>Nijinga</h3>
+                    <h4 class="container-h4">Cycling coaches</h4>
+                    <p>What is a cycling coach? Do you need a cycle coaching plan to achieve your goals? Find out more
+                        cycling coaching at Njinga Cycling.</p>
+                </div>
+
+                <!-- Coach 6 -->
+                <div class="carousel-card">
+                    <img src="../images/istockphoto-1431913701-612x612.jpg" alt="Coach 6">
+                    <h3>Jion Key</h3>
+                    <h4 class="container-h4">Karate coaches</h4>
+                    <p>Male coach ready for karate training at fitness studio, looking serious at dojo practice in gym
+                        and sitting on the floor at a self defense class. Portrait of tough, healthy.</p>
+                </div>
+
+                <!-- Coach 7 -->
+                <div class="carousel-card">
+                    <img src="../images/Kareena-Coach-744x1024.jpg" alt="Coach 7">
+                    <h3>Noosa Aquati</h3>
+                    <h4 class="container-h4">Swimming coaches</h4>
+                    <p>Having recently retired from competitive swimming after a medal winning performance at the Tokyo
+                        Olympics, Kareena will utiour Squad Program.</p>
+                </div>
+
+                <!-- Coach 8 -->
+                <div class="carousel-card">
+                    <img src="../images/Dan-P_470x458-1.jpg" alt="Coach 8">
+                    <h3>Daniel Pymont</h3>
+                    <h4 class="container-h4">Tennis coaches</h4>
+                    <p>Danny has spent most of his coaching career in the south of the county, assisting both adults and
+                        juniors in their tennis development. He has gained a reputation.</p>
+                </div>
+
+                <!-- Coach 9 -->
+                <div class="carousel-card">
+                    <img src="../images/yoga-manuela-kohn.jpg" alt="Coach 9">
+                    <h3>Manuela Kohn</h3>
+                    <h4 class="container-h4">Yoga coaches</h4>
+                    <p>Yoga mit Manuela Kohn In meinen Yogakursen können Sie Ihre Körperwahrnehmung schulen, alltägliche
+                    </p>
+                </div>
+
+                <!-- Coach 10 -->
+                <div class="carousel-card">
+                    <img src="../images/Personal-Trainer-Strength-Conditioning-and-Fitness-Coach-JM-Nutrition.webp"
+                        alt="Coach 10">
+                    <h3>Jm Nutrition</h3>
+                    <h4 class="container-h4">Aerobics coaches</h4>
+                    <p>JM Nutrition’s personal trainer, strength, conditioning and fitness coach is also a registered
+                        dietitian and sports .</p>
+                </div>
+            </div>
+            <div class="carousel-buttons">
+                <button class="carousel-button" id="prevButton">&#9664;</button>
+                <button class="carousel-button" id="nextButton">&#9654;</button>
+            </div>
+        </div>
+
+        <a href="../index.html" class="coaches-link" target="_blank">
+            <button class="button">
+                <span class="button-content"> Coaches</span>
+            </button>
+        </a>
+    </div>
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+
+        let currentIndex = 0;
+        const cardWidth = 280; // Card width including margin
+
+        prevButton.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+            }
+        });
+
+        nextButton.addEventListener('click', () => {
+            if (currentIndex < track.children.length - 1) {
+                currentIndex++;
+                track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
