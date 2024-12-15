@@ -1,9 +1,8 @@
 @import url('./header.css');
 @import url('./clubs.css');
-<<<<<<< HEAD
 @import url('./coaches.css');
 @import url('./coachesclub.css');
-=======
+
 
 * {
     padding: 0;
@@ -11,4 +10,3 @@
     box-sizing: border-box;
 }
 
->>>>>>> main
