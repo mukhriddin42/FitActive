@@ -7,3 +7,18 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+:root {
+    --DarkBlue:#020857;
+    --Blue:#5784BA;
+    --MainTextColor:#414781;
+    --Pink:#F4CFDF;
+    --LightGreen: #ADF7B6;
+}
