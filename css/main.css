@@ -1,5 +1,8 @@
 @import url('./header.css');
 @import url('./clubs.css');
+@import url('./coaches.css');
+@import url('./coachesclub.css');
+
 
 * {
     padding: 0;

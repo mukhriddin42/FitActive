@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --DarkBlue:#09ff00;
+    --SimpleBlack:#3B4A6B;
+    --Blue:#1391CE;
+    --SkyBlue:#cdedffa9;
+    --White:#FFFFFF;
+    --DarkYellow:#F7BA0E;
+}
+  .coaches-container {
+    width: 1200px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  .carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-card {
+    flex: 0 0 250px;
+    background: linear-gradient(120deg, #ffffff, #e8f0ff);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 0 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+.container-h1{
+   color: var(--Blue);
+   cursor: pointer;
+   font-family: "Rubik", sans-serif;
+}
+.container-h4{
+    color: var(--Blue);
+    cursor: pointer;
+    font-family: "Rubik", sans-serif;
+ }
+  .carousel-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .carousel-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  .carousel-card h3 {
+    margin: 10px 0;
+    font-size: 1.3em;
+    color: #2c3e50;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .carousel-card p {
+    font-size: 1em;
+    color: #7f8c8d;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+
+  .carousel-button {
+    background: linear-gradient(120deg, #3498db, #2ecc71);
+    border: none;
+    color: #fff;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.2em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .carousel-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .carousel-button:active {
+    transform: scale(1);
+  }
+  .button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background:lightcoral;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  top: 20px;
+
+  }
+  
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+  }
+  
