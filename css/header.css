@@ -91,7 +91,8 @@
     font-weight: 400;
     letter-spacing: 1px;
     line-height:28px;
-    color: #aba9a9;
+    color: aqua;
+    text-shadow: -1px 1px 4px rgb(255, 255, 255);
     position: absolute;
     top: -450px;
     left: 50%;
