@@ -12,6 +12,7 @@ body {
 
 /* Partners Section Styling */
 .partners-section {
+    margin-top: 200px;
     background-color: var(--White);
     color: #fff;
     text-align: center;
