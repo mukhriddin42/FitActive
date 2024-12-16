@@ -50,15 +50,73 @@
     outline: none;
     border-radius: 20px;
 }
+
+.signup-form p {
+    color: var(--White);
+    font-family: var(--MainFont);
+    font-size: 16px;
+}
+
+.age-gender {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.age-gender .gender {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gender .gender-item {
+    display: flex;
+    align-items: center;
+    
+}
+
+.gender .gender-item input {
+    width: 35px;
+}
+
+.age-gender .age {
+    width: 50%;
+}
+
+.age-gender .age input {
+    width: 100%;
+}
 .signup-form .left-form {
     width: 370px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin-top: 80px;
 }
 
 .signup-form .right-form {
     width: 370px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 80px;
 }
 
+.signup-form button {
+    position: absolute;
+    right: 160px;
+    bottom: 70px;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid var(--Blue);
+    cursor: pointer;
+    background-color: var(--White);
+    color: var(--DarkBlue);
+    font-size: 16px;
+    font-family: var(--MainFont);
+    font-weight: 500;
+    transition: all .7s ease;
+}
+
+.signup-form button:hover {
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(12,12,174,1) 50%, rgba(0,212,255,1) 100%);
+    color: var(--White);
+}

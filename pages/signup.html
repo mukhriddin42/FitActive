@@ -19,11 +19,11 @@
             <div class="main-header" id="MainHeader">
               <a href="" class="header-logo">Fit<span>Active</span></a>
               <nav class="nav-items">
-                <a href="./index.html" class="nav-item">Home</a>
-                <a href="#" class="nav-item">About</a>
+                <a href="../index.html" class="nav-item">Home</a>
+                <!-- <a href="#" class="nav-item">About</a>
                 <a href="#" class="nav-item">Clubs</a>
                 <a href="#coaches" class="nav-item">Coaches</a>
-                <a href="#" class="nav-item">Contact</a>
+                <a href="#" class="nav-item">Contact</a> -->
               </nav>
               <div class="register">
                 <a href="#" class="nav-item login">Log in</a>
@@ -45,11 +45,21 @@
                 <input type="text" name="surname" id="">
                 <label for="phone">Phone number</label>
                 <input type="text" name="phone" id="">
-                <label for="gender">Gender</label>
-                <input type="radio" name="gender" id="">
-                <input type="radio" name="gender" id="">
-                <label for="age">Your age</label>
-                <input type="number" name="" id="">
+                <div class="age-gender">
+                    <div class="gender">
+                        <label for="gender">Gender</label>
+                        <div class="gender-item">
+                            <input type="radio" name="gender" id=""><p>Man</p>
+                        </div>
+                        <div class="gender-item">
+                            <input type="radio" name="gender" id=""><p>Woman</p>
+                        </div>
+                    </div>
+                    <div class="age">
+                        <label for="age">Your age</label>
+                        <input type="number" name="" id="">
+                    </div>
+                </div>
             </form>
 
             <form action="" class="right-form">
@@ -68,7 +78,7 @@
                     <option value="">Boxing</option>
                     <option value="">Cycling</option>
                 </select>
-                <label for="">A coach will be assigned to you automatically.</label>
+                <label for="">Coach will be assigned automatically.</label>
                 <select name="" id="">
                     <option value="" disabled selected>Trainer</option>
                     <option value="" disabled>Brandon Roy</option>
@@ -90,15 +100,15 @@
                     <option value="saturday">Saturday</option>
                     <option value="sunday">Sunday</option>
                 </select>
-                <label for="">How much time do you want to spend per day?</label>
+                <label for="">Hours per a day.</label>
                 <select name="" id="">
                     <option value="" disabled selected>Hour a day</option>
                     <option value="">1</option>
                     <option value="">2</option>
                     <option value="">3</option>
                 </select>
-                <!-- <label for="time">Select a time</label> -->
             </form>
+            <button type="submit">Submit</button>
         </section>
         <!-- Signup section -->
 
