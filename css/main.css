@@ -3,6 +3,7 @@
 @import url('./clubs.css');
 @import url('./coaches.css');
 @import url('./coachesclub.css');
+@import url('./signup.css');
 
 * {
     padding: 0;
@@ -19,6 +20,7 @@ a {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
 :root {
