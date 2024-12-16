@@ -9,12 +9,27 @@
 
   <body>
     <!-- Header section -->
-    <header class="main-header">
+    <header class="header">
+        <div class="header__background-video">
+            <video muted loop src="./assets/video-1.mp4"></video>
+        </div>
       <div class="container">
-        <div class="main-header__logo">
-          <a href="./index.html">
-            <p>main logo</p>
-          </a>
+        <!-- <div class="top-header">
+              <a href="tel: +998889395953">Quick call <span>+998889395953</span></a>
+            </div> -->
+        <div class="main-header" id="MainHeader">
+          <a href="" class="header-logo">Fit<span>Active</span></a>
+          <nav class="nav-items">
+            <a href="./index.html" class="nav-item">Home</a>
+            <a href="#" class="nav-item">About</a>
+            <a href="#" class="nav-item">Clubs</a>
+            <a href="#coaches" class="nav-item">Coaches</a>
+            <a href="#" class="nav-item">Contact</a>
+          </nav>
+          <div class="register">
+            <a href="#" class="nav-item login">Log in</a>
+            <a href="#" class="nav-item signup">Sign up</a>
+          </div>
         </div>
       </div>
     </header>
@@ -22,29 +37,21 @@
 
     <!-- Homepage section -->
     <section class="homepage">
-      <div class="container">
-        <div class="homepage-left">
-          <h1 class="homepage-title">Your New Fitness Journey Starts Here!</h1>
-          <h3 class="homepage-subtitle">
-            Welcome to our sports clubs! We take great pride in supporting your
-            journey towards a healthier, stronger, and more active lifestyle.
-            Every step you take brings you closer to your goals – and we’re here
-            to help you achieve them.
-          </h3>
-          <a href="./pages/signup.html" class="signup-btn">Sign up now</a>
+        <div class="container">
+            <h1 class="homepage-title">Your New Fitness Journey Starts Here!</h1>
+            <h3 class="homepage-subtitle">
+                Welcome to our sports clubs! We take great pride in supporting your
+                journey towards a healthier, stronger, and more active lifestyle.
+                Every step you take brings you closer to your goals – and we’re here
+                to help you achieve them.
+            </h3>
+            <a href="./pages/signup.html" class="signup-btn">Sign up now</a>
         </div>
-        <div class="homepage-right">
-          <div class="back-box-2">
-            <div class="back-box-1"></div>
-          </div>
-        </div>
-      </div>
     </section>
     <!-- /Homepage section -->
 
-
     <!-- <h1> Coaches murabiyylar</h1> -->
-    <section class="coaches">
+    <section class="coaches" id="coaches">
       <h1 class="fitness-teacher">Coaches</h1>
       <div class="chiziq"></div>
       <div class="coaches-div container2">
@@ -87,7 +94,6 @@
         </a>
       </div>
     </section>
-
 
     <section class="sertifikate container">
       <h1 class="sertifikate_h1">Certificates</h1>
@@ -162,6 +168,19 @@
       </div>
     </section> -->
 
-
+    <script>
+      // Scroll event listener
+      window.addEventListener("scroll", function () {
+        const MainHeader = document.getElementById("MainHeader");
+        if (window.scrollY > 600) {
+            MainHeader.style.backgroundColor = "#020857";
+            MainHeader.style.border = "none"
+            MainHeader.style.borderRadius = "0 0 20px 20px";
+        } else {
+            MainHeader.style.backgroundColor = "#000000b2";
+            MainHeader.style.borderRadius = "" 
+        }
+      });
+    </script>
   </body>
 </html>

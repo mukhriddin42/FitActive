@@ -1,4 +1,88 @@
-.main-header {
-    height: 100px;
-    border: 1px solid red;
+
+.header__background-video {
+    max-width: 100%;
 }
+
+.header__background-video video {
+    width: 100%;
+    background-color: red;
+}
+
+.main-header {
+    width: 1200px;
+    height: 70px;
+    border-bottom: 2px solid var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    transition: all 1s ease;
+    z-index: 3;
+}
+
+.main-header .header-logo {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--MainFont);
+    color: var(--White);
+    padding: 0 20px;
+}
+
+.main-header .header-logo span {
+    color: var(--Blue);
+}
+
+.main-header nav {
+    display: flex;
+    gap: 35px;
+}
+
+.main-header .nav-item {
+    font-size: 14px;
+    font-family: var(--MainFont);
+    color: var(--White);
+    text-shadow: -1px 1px 3px aqua;
+    transition: all .7s ease;
+}
+
+.main-header .nav-item:hover {
+    transform: scale(1.2);
+}
+
+.main-header .register .signup {
+    background-color: var(--Blue);
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all .7s;
+}
+.main-header .register .signup:hover {
+    background-color: var(--DarkBlue);
+}
+
+.main-header .register {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+
+
+/* Homepage section style */
+.homepage {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.homepage .homepage-title {
+    color: var(--White);
+    width: 200px;
+
+}
+
+.homepage .homepage-subtitle {
+    color: var(--White);
+}
+
