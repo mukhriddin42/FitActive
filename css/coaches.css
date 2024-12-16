@@ -9,6 +9,11 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+.container2{
+    width: 1100px;
+	margin-left: auto;
+	margin-right: auto; 
+}
 :root{
     --DarkBlue:#09ff00;
     --SimpleBlack:#3B4A6B;
@@ -67,10 +72,10 @@ color: var(--SimpleBlack);
 }
 .coaches-div{
     display: flex;
-    gap: 60px;
+    gap:60px;
     position: relative;
     top: 20px;
-left: 74px;
+left: 30px;
 flex-wrap: wrap;
 }
 
@@ -86,7 +91,7 @@ flex-wrap: wrap;
     color: #fff;
     border: none;
     cursor: pointer;
-    left: 400px;
+    left: 440px;
 
   }
   
@@ -100,7 +105,6 @@ flex-wrap: wrap;
   }
   
   .button::before {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -116,4 +120,39 @@ flex-wrap: wrap;
     );
     transition: all 0.475s;
   }
-  
+  .sertifikate_h1{
+    font-family: "Rubik", sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+color: var(--Blue);
+text-align: center;
+margin-top: 100px;
+  }
+  .sertifikate_img{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+margin-top: 60px;
+  }
+  .sertifikate-div{
+    display: flex;
+    gap: 90px;
+  }
+  .sertifikate_img:hover{
+    box-shadow: 4px 4px 7px gray;
+    cursor: pointer;
+    transform: scaleY(1.1);
+  }
+  .sertifikate_img2:hover{
+    box-shadow: 4px 4px 7px gray;
+    cursor: pointer;
+    transform: scaleY(1.1);
+  }
+  .sertifikate_img2{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+margin-top: 200px;
+  }
