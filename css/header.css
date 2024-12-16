@@ -50,13 +50,15 @@
 }
 
 .main-header .register .signup {
-    background-color: var(--Blue);
+    background-color: var(--White);
+    color: var(--DarkBlue);
     padding: 10px 20px;
     border-radius: 20px;
     transition: all .7s;
 }
 .main-header .register .signup:hover {
-    background-color: var(--DarkBlue);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(12,12,174,1) 50%, rgba(0,212,255,1) 100%);
+    color: var(--White);
 }
 
 .main-header .register {
