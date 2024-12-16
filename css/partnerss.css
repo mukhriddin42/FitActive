@@ -11,16 +11,16 @@ body {
 }
 
 /* Partners Section Styling */
-.partners-section {
-    background-color: var(--White);
-    color: #fff;
+.partners-section1 {
+    background-color: white;
+    color: black;
     text-align: center;
     padding: 60px 20px;
     position: relative;
 }
 
 /* Dark Overlay for better readability */
-.partners-section::before {
+.partners-section1::before {
     content: '';
     position: absolute;
     top: 0;
